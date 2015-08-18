@@ -46,3 +46,4 @@ group :development, :test do
   gem 'factory_girl_rails', '4.5.0'
 end
 
+gem 'twitter-bootstrap-rails', '3.2.0'

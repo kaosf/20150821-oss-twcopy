@@ -1,2 +1,10 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<%= render file: 'tweets/_form' if user_signed_in? %>
+
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Tweet</th>
+    <th>Time</th>
+  </tr>
+  <%= render @tweets %>
+</table>

@@ -1,0 +1,9 @@
+<%= form_for Tweet.new do |f| %>
+  <div class="form-group">
+    <%= f.label :body, 'Tweet' %>
+    <%= f.text_area :body, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'Post', class: 'btn btn-primary' %>
+  </div>
+<% end %>

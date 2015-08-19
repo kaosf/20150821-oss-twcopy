@@ -47,3 +47,4 @@ group :development, :test do
 end
 
 gem 'twitter-bootstrap-rails', '3.2.0'
+gem 'devise', '3.4.1'

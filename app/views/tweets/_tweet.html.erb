@@ -1,5 +1,6 @@
 <tr>
   <td><%= tweet.user.name %></td>
+  <td><%= image_tag tweet.user.icon.url, class: 'img-circle', width: 64, height: 64 %></td>
   <td><%= tweet.body %></td>
   <td><%= tweet.created_at %></td>
 </tr>

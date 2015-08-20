@@ -74,6 +74,8 @@
               <% if user_signed_in? %>
                 <dt>Your name</dt>
                 <dd><%= current_user.name %></dd>
+                <dt>Your icon</dt>
+                <dd><%= image_tag current_user.icon.url, class: 'img-circle', width: 128, height: 128 %></dd>
               <% end %>
             </dl>
             <ul class="nav nav-list">

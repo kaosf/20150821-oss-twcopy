@@ -13,6 +13,12 @@
     <%= f.text_field :name %>
   </div>
 
+  <div class="field">
+    <%= f.label :icon %><br />
+    <%= image_tag resource.icon.url %><br />
+    <%= f.file_field :icon %>
+  </div>
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
